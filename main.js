@@ -23,7 +23,7 @@ rendering.render(main_scene, cam);
 
 const geo = new THREE.BoxGeometry(1.84, 1.84, 1.84);
 const tex = new THREE.TextureLoader().load('/ab67616d0000b27371d62ea7ea8a5be92d3c1f62.jpg')
-const mat = new THREE.MeshBasicMaterial({map: tex});
+const mat = new THREE.MeshBasicMaterial({ color: 0xff0000 });
 const cube = new THREE.Mesh( geo, mat );
 main_scene.add(cube);
 const donut_geo = new THREE.TorusGeometry(8.5, 3.2, 14, 98);
